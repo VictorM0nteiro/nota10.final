@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@270;300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --primary-color: #36B3B8;
+    --secondary-color:  #79DBA3;
+    --tertiary-color: #083853;
+}
+img {
+  height: 150px; /* Define a altura desejada */
+  width: auto; /* Mantém a proporção original */
+}
+body{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Seção header */
+.header{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--primary-color);
+    position: relative;
+}
+.header nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0 2rem;
+}
+.header .menu{
+    font-size: 25px;
+    display: none;
+}
+.header nav img{
+    width: 150px;
+    z-index: 1;
+}
+.header nav a{
+    text-decoration: none;
+    background: var(--secondary-color);
+    color: #083853;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 5;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 15%; /* Use uma porcentagem para alinhar horizontalmente */
+    position: relative; /* Altere para position: relative para manter o elemento no fluxo normal */
+}
+.esfera{
+    width: 300px;
+    height: 200px;
+    border-radius: 0 0 100% 0;
+    background-color: var(--secondary-color);
+    position: absolute;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+}
+.header .main{
+    text-align: center;
+}
+.header .main span{
+    color: white;
+}
+.header .main h1{
+    font-size: 7rem;
+    margin-bottom: 30px;
+    color: #083853;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header .main h2{
+    margin-bottom: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header .main p{
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    line-height: 40px;
+    color: white;
+    background-color: #083853;
+    border: 2px solid #083853;
+    width: 25%; /* Use uma porcentagem para ajustar a largura */
+    border-radius: 10px;
+}
+.header .main a{
+    display: inline-block;
+    border: 2px solid var(--secondary-color);
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #083853;
+    font-weight: bold;
+    margin-top: 40px;
+    transition: 0.5s;
+}
+.header .main a:hover {
+    background: transparent;
+    color: #083853;
+}
+svg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+}
+.header .right-box{
+    right: 0;
+    bottom:0;
+}
+.header .right-box img{
+    height: 1080px;
+    width: 600px;
+    margin-top: -700px;
+    margin-left: 1150px;
+    z-index: 3;
+    position: absolute;
+}
+/* Seção header completa*/
